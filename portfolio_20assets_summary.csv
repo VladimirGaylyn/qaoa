@@ -1,5 +1,0 @@
-Method,Return (%),Risk (%),Sharpe Ratio,Selected Assets
-QAOA,81.08,91.32,0.888,"GOOGL, AMZN, PFE..."
-Top Sharpe,66.55,57.77,1.152,"GLD, GS, DIS..."
-Min Variance,44.59,40.55,1.1,"JPM, GS, DIS..."
-Diversified,58.21,52.51,1.109,"GOOGL, GS, PFE..."
