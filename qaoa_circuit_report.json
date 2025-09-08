@@ -1,0 +1,33 @@
+{
+  "circuit_configuration": {
+    "n_qubits": 8,
+    "n_select": 4,
+    "qaoa_depth": 3,
+    "shots": 8192,
+    "search_space_size": 70
+  },
+  "measurement_results": {
+    "total_unique_outcomes": 252,
+    "valid_outcomes": 69,
+    "invalid_outcomes": 183,
+    "valid_state_probability": 0.1846923828125,
+    "constraint_violation_rate": 0.8153076171875
+  },
+  "solution_quality": {
+    "best_solution_probability": 0.00244140625,
+    "best_solution_count": 20,
+    "approximation_ratio": 0.5101423146607682,
+    "expected_objective": 0.2205971604376276
+  },
+  "probability_analysis": {
+    "prob_optimal": 0.00244140625,
+    "prob_95_optimal": 0.0037841796875,
+    "prob_90_optimal": 0.0054931640625,
+    "prob_top_10": 0.0181884765625
+  },
+  "quantum_advantage": {
+    "classical_random_prob": 0.014285714285714285,
+    "qaoa_enhancement_factor": 0.1708984375,
+    "sampling_efficiency": 0.9857142857142858
+  }
+}
