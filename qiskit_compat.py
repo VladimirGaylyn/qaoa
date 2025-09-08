@@ -136,16 +136,16 @@ def check_dependencies():
     print("=" * 50)
     
     if installed:
-        print(f"✓ Installed ({len(installed)}): {', '.join(installed)}")
+        print(f"[OK] Installed ({len(installed)}): {', '.join(installed)}")
     
     if missing:
-        print(f"\n✗ Missing ({len(missing)}):")
+        print(f"\n[X] Missing ({len(missing)}):")
         for item in missing:
             print(f"  - {item}")
         print("\nTo install missing dependencies, run:")
         print("!pip install " + " ".join([m.split(':')[0] for m in missing]))
     else:
-        print("\n✓ All dependencies are installed!")
+        print("\n[OK] All dependencies are installed!")
     
     return len(missing) == 0
 
