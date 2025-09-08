@@ -9,7 +9,8 @@
       "Bash(python test_qaoa_portfolio.py:*)",
       "Bash(pip install:*)",
       "Bash(python:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(git restore:*)"
     ],
     "deny": [],
     "ask": []

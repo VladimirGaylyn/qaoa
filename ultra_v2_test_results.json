@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-08T18:38:19.724104",
+    "test_type": "Ultra-Optimized QAOA v1 vs v2 Comparison",
+    "total_tests": 5
+  },
+  "results": [
+    {
+      "config": {
+        "n_assets": 6,
+        "budget": 3,
+        "seed": 42
+      },
+      "v1": {
+        "objective_value": 0.19286572056227214,
+        "approximation_ratio": 1.0,
+        "circuit_depth": 6,
+        "gate_count": 28,
+        "execution_time": 0.3325986862182617,
+        "constraint_satisfied": 
