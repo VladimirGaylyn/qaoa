@@ -1,0 +1,152 @@
+{
+  "tickers": [
+    "HD",
+    "META",
+    "DIS",
+    "WFC",
+    "ISRG",
+    "CSCO",
+    "ABT",
+    "EOG",
+    "CME",
+    "TXN",
+    "BMY",
+    "AAPL",
+    "RTX",
+    "DE",
+    "TMO",
+    "FIS",
+    "PEP",
+    "MSFT",
+    "LRCX",
+    "MMM"
+  ],
+  "risk_factor": 0.5,
+  "classical_exact": {
+    "solution": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.22124511363857643,
+    "time": 0.09782171249389648,
+    "metrics": {
+      "return": 0.22871903651624387,
+      "risk": 0.1222613829274594,
+      "sharpe": 1.7071542257957435,
+      "sortino": 1.7071542257957435,
+      "variance": 0.014947845755334862
+    },
+    "selected_assets": [
+      "DIS",
+      "ISRG",
+      "EOG",
+      "CME",
+      "DE"
+    ]
+  },
+  "classical_greedy": {
+    "solution": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.2202143423889152,
+    "time": 0.0,
+    "metrics": {
+      "return": 0.22653918696661285,
+      "risk": 0.11247083691070897,
+      "sharpe": 1.8363799242516983,
+      "sortino": 1.8363799242516983,
+      "variance": 0.012649689155395296
+    },
+    "selected_assets": [
+      "DIS",
+      "ISRG",
+      "EOG",
+      "CME",
+      "FIS"
+    ]
+  },
+  "warmstart_qaoa": {
+    "solution": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.22124511363857643,
+    "time": 9.427321731359855,
+    "probability": 0.2107758890505115,
+    "metrics": {
+      "return": 0.22871903651624387,
+      "risk": 0.1222613829274594,
+      "sharpe": 1.7071542257957435,
+      "sortino": 1.7071542257957435,
+      "variance": 0.014947845755334862
+    },
+    "selected_assets": [
+      "DIS",
+      "ISRG",
+      "EOG",
+      "CME",
+      "DE"
+    ]
+  },
+  "comparison": {
+    "warmstart_approximation_ratio": 1.0,
+    "warmstart_vs_classical_time": 96.37248716074221,
+    "value_gap": 0.0,
+    "classical_method_used": "exact_enumeration"
+  }
+}

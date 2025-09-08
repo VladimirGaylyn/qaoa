@@ -1,0 +1,152 @@
+{
+  "tickers": [
+    "BMY",
+    "MMM",
+    "GIS",
+    "ICE",
+    "VRTX",
+    "SPGI",
+    "WMT",
+    "AXP",
+    "LLY",
+    "USB",
+    "MU",
+    "AMZN",
+    "AVGO",
+    "MCO",
+    "DHR",
+    "INTC",
+    "KMB",
+    "SYK",
+    "CME",
+    "UNH"
+  ],
+  "risk_factor": 0.3,
+  "classical_exact": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.19366037724391652,
+    "time": 0.09504485130310059,
+    "metrics": {
+      "return": 0.19686396047180496,
+      "risk": 0.10333736381206993,
+      "sharpe": 1.7115199570355892,
+      "sortino": 1.7115199570355892,
+      "variance": 0.010678610759628098
+    },
+    "selected_assets": [
+      "SPGI",
+      "AXP",
+      "USB",
+      "AVGO",
+      "INTC"
+    ]
+  },
+  "classical_greedy": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.19366037724391652,
+    "time": 0.0,
+    "metrics": {
+      "return": 0.19686396047180496,
+      "risk": 0.10333736381206993,
+      "sharpe": 1.7115199570355892,
+      "sortino": 1.7115199570355892,
+      "variance": 0.010678610759628098
+    },
+    "selected_assets": [
+      "SPGI",
+      "AXP",
+      "USB",
+      "AVGO",
+      "INTC"
+    ]
+  },
+  "warmstart_qaoa": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.19366037724391652,
+    "time": 14.096152546591068,
+    "probability": 0.21474528863470904,
+    "metrics": {
+      "return": 0.19686396047180496,
+      "risk": 0.10333736381206993,
+      "sharpe": 1.7115199570355892,
+      "sortino": 1.7115199570355892,
+      "variance": 0.010678610759628098
+    },
+    "selected_assets": [
+      "SPGI",
+      "AXP",
+      "USB",
+      "AVGO",
+      "INTC"
+    ]
+  },
+  "comparison": {
+    "warmstart_approximation_ratio": 1.0,
+    "warmstart_vs_classical_time": 148.3105329044922,
+    "value_gap": 0.0,
+    "classical_method_used": "exact_enumeration"
+  }
+}

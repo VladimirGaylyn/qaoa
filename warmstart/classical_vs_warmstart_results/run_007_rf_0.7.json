@@ -1,0 +1,152 @@
+{
+  "tickers": [
+    "GOOGL",
+    "HON",
+    "COST",
+    "MPC",
+    "UPS",
+    "MCO",
+    "GS",
+    "PG",
+    "LMT",
+    "SCHW",
+    "LLY",
+    "NKE",
+    "GILD",
+    "KMB",
+    "TGT",
+    "CRM",
+    "CSCO",
+    "KO",
+    "XOM",
+    "PNC"
+  ],
+  "risk_factor": 0.7,
+  "classical_exact": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.21589599655959854,
+    "time": 0.43014097213745117,
+    "metrics": {
+      "return": 0.22930995396278298,
+      "risk": 0.13842975218594986,
+      "sharpe": 1.5120301138849197,
+      "sortino": 1.5120301138849197,
+      "variance": 0.01916279629026349
+    },
+    "selected_assets": [
+      "MCO",
+      "PG",
+      "NKE",
+      "GILD",
+      "TGT"
+    ]
+  },
+  "classical_greedy": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.21589599655959854,
+    "time": 0.0,
+    "metrics": {
+      "return": 0.22930995396278298,
+      "risk": 0.13842975218594986,
+      "sharpe": 1.5120301138849197,
+      "sortino": 1.5120301138849197,
+      "variance": 0.01916279629026349
+    },
+    "selected_assets": [
+      "MCO",
+      "PG",
+      "NKE",
+      "GILD",
+      "TGT"
+    ]
+  },
+  "warmstart_qaoa": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.21589599655959854,
+    "time": 13.836027965818396,
+    "probability": 0.18777703131396414,
+    "metrics": {
+      "return": 0.22930995396278298,
+      "risk": 0.13842975218594986,
+      "sharpe": 1.5120301138849197,
+      "sortino": 1.5120301138849197,
+      "variance": 0.01916279629026349
+    },
+    "selected_assets": [
+      "MCO",
+      "PG",
+      "NKE",
+      "GILD",
+      "TGT"
+    ]
+  },
+  "comparison": {
+    "warmstart_approximation_ratio": 1.0,
+    "warmstart_vs_classical_time": 32.16626376479454,
+    "value_gap": 0.0,
+    "classical_method_used": "exact_enumeration"
+  }
+}

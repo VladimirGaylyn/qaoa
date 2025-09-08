@@ -1,0 +1,152 @@
+{
+  "tickers": [
+    "ABT",
+    "ZTS",
+    "MDLZ",
+    "DIS",
+    "DHR",
+    "CSCO",
+    "UPS",
+    "SYK",
+    "WMT",
+    "ISRG",
+    "UNH",
+    "CL",
+    "PXD",
+    "KMB",
+    "VRTX",
+    "CB",
+    "MSFT",
+    "NVDA",
+    "ICE",
+    "PFE"
+  ],
+  "risk_factor": 0.7,
+  "classical_exact": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.21245975023092162,
+    "time": 0.09729671478271484,
+    "metrics": {
+      "return": 0.2252216717872093,
+      "risk": 0.13502339245102088,
+      "sharpe": 1.519897167904832,
+      "sortino": 1.519897167904832,
+      "variance": 0.0182313165089824
+    },
+    "selected_assets": [
+      "UPS",
+      "SYK",
+      "ISRG",
+      "CB",
+      "MSFT"
+    ]
+  },
+  "classical_greedy": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.20630839127654282,
+    "time": 0.0,
+    "metrics": {
+      "return": 0.21370628536734287,
+      "risk": 0.10280282160385648,
+      "sharpe": 1.8842506688559246,
+      "sortino": 1.8842506688559246,
+      "variance": 0.01056842012971434
+    },
+    "selected_assets": [
+      "DHR",
+      "UPS",
+      "SYK",
+      "VRTX",
+      "CB"
+    ]
+  },
+  "warmstart_qaoa": {
+    "solution": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.21245975023092162,
+    "time": 9.111516139351984,
+    "probability": 0.1922732279053385,
+    "metrics": {
+      "return": 0.2252216717872093,
+      "risk": 0.13502339245102088,
+      "sharpe": 1.519897167904832,
+      "sortino": 1.519897167904832,
+      "variance": 0.0182313165089824
+    },
+    "selected_assets": [
+      "UPS",
+      "SYK",
+      "ISRG",
+      "CB",
+      "MSFT"
+    ]
+  },
+  "comparison": {
+    "warmstart_approximation_ratio": 1.0,
+    "warmstart_vs_classical_time": 93.6466987575071,
+    "value_gap": 0.0,
+    "classical_method_used": "exact_enumeration"
+  }
+}

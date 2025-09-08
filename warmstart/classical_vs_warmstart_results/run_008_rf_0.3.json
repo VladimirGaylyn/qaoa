@@ -1,0 +1,152 @@
+{
+  "tickers": [
+    "C",
+    "DIS",
+    "AMGN",
+    "MCO",
+    "GIS",
+    "LLY",
+    "OXY",
+    "KLAC",
+    "MRK",
+    "MCD",
+    "CB",
+    "SLB",
+    "AXP",
+    "FIS",
+    "REGN",
+    "GS",
+    "CSCO",
+    "JNJ",
+    "AMD",
+    "TGT"
+  ],
+  "risk_factor": 0.3,
+  "classical_exact": {
+    "solution": [
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.20989403481738322,
+    "time": 0.4475843906402588,
+    "metrics": {
+      "return": 0.21708396656237114,
+      "risk": 0.1548109787772164,
+      "sharpe": 1.2730619502508829,
+      "sortino": 1.2730619502508829,
+      "variance": 0.02396643914995974
+    },
+    "selected_assets": [
+      "DIS",
+      "AMGN",
+      "GIS",
+      "CB",
+      "SLB"
+    ]
+  },
+  "classical_greedy": {
+    "solution": [
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.20989403481738322,
+    "time": 0.0,
+    "metrics": {
+      "return": 0.21708396656237114,
+      "risk": 0.1548109787772164,
+      "sharpe": 1.2730619502508829,
+      "sortino": 1.2730619502508829,
+      "variance": 0.02396643914995974
+    },
+    "selected_assets": [
+      "DIS",
+      "AMGN",
+      "GIS",
+      "CB",
+      "SLB"
+    ]
+  },
+  "warmstart_qaoa": {
+    "solution": [
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "value": 0.20989403481738322,
+    "time": 9.72629593348648,
+    "probability": 0.15526618572389259,
+    "metrics": {
+      "return": 0.21708396656237114,
+      "risk": 0.1548109787772164,
+      "sharpe": 1.2730619502508829,
+      "sortino": 1.2730619502508829,
+      "variance": 0.02396643914995974
+    },
+    "selected_assets": [
+      "DIS",
+      "AMGN",
+      "GIS",
+      "CB",
+      "SLB"
+    ]
+  },
+  "comparison": {
+    "warmstart_approximation_ratio": 1.0,
+    "warmstart_vs_classical_time": 21.73064149885398,
+    "value_gap": 0.0,
+    "classical_method_used": "exact_enumeration"
+  }
+}
