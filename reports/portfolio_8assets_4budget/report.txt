@@ -1,0 +1,55 @@
+======================================================================
+QAOA PORTFOLIO OPTIMIZATION REPORT
+======================================================================
+Generated: 2025-09-08 17:44:11
+
+PROBLEM CONFIGURATION
+----------------------------------------
+Number of Assets: 8
+Budget (Assets to Select): 4
+Total Possible Portfolios: 70
+
+CLASSICAL ALGORITHM RESULTS
+----------------------------------------
+Objective Value: 0.172812
+Expected Return: 0.1838
+Risk (Volatility): 0.1481
+Sharpe Ratio: 1.241
+Execution Time: 0.001 seconds
+Selected Assets: [1, 5, 6, 7]
+
+QAOA RESULTS
+----------------------------------------
+Objective Value: 0.172812
+Expected Return: 0.1838
+Risk (Volatility): 0.1481
+Sharpe Ratio: 1.241
+Execution Time: 0.924 seconds
+Constraint Satisfied: Yes
+Selected Assets: [1, 5, 6, 7]
+Approximation Ratio: 1.000
+
+QUANTUM CIRCUIT METRICS
+----------------------------------------
+Circuit Depth: 142
+Gate Count: 284
+Number of Qubits: 8
+Total Measurements: 8192
+
+MEASUREMENT STATISTICS
+----------------------------------------
+Feasible Solutions: 8192 (100.0%)
+Infeasible Solutions: 0 (0.0%)
+
+Hamming Weight Distribution:
+  4 assets: 8192 (100.0%) <-- TARGET
+
+PERFORMANCE COMPARISON
+----------------------------------------
+Objective Ratio (QAOA/Classical): 1.000
+Time Ratio (QAOA/Classical): 837.3x
+Solution Match: QAOA found the same solution as classical
+
+======================================================================
+END OF REPORT
+======================================================================

@@ -227,7 +227,8 @@ class ImprovedQAOAPortfolio:
         )
     
     def solve_improved_qaoa(self, expected_returns: np.ndarray, covariances: np.ndarray,
-                           n_layers: int = None, max_iterations: int = None) -> PortfolioResult:
+                           n_layers: int = None, max_iterations: int = None,
+                           return_counts: bool = False) -> PortfolioResult | Tuple[PortfolioResult, Dict]:
         """
         Solve using improved QAOA with Dicke states and Grover mixer
         """
@@ -376,7 +377,7 @@ class ImprovedQAOAPortfolio:
         print(f"  Approximation ratio: {approximation_ratio:.3f}")
         print(f"  Time: {execution_time:.2f}s")
         
-        return PortfolioResult(
+        result = PortfolioResult(
             solution=best_solution,
             objective_value=best_value,
             expected_return=expected_return,
@@ -389,6 +390,11 @@ class ImprovedQAOAPortfolio:
             approximation_ratio=approximation_ratio,
             convergence_history=convergence_history
         )
+        
+        if return_counts:
+            return result, counts
+        else:
+            return result
 
 
 def run_comprehensive_benchmark():
