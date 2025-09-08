@@ -1,14 +1,14 @@
 # QAOA Portfolio Optimization
 
-Optimized Quantum Approximate Optimization Algorithm (QAOA) for portfolio optimization achieving **90%+ approximation ratios** with drastically reduced circuit depth.
+Ultra-Optimized Quantum Approximate Optimization Algorithm (QAOA) v2 for portfolio optimization achieving **98.9%+ approximation ratios** with NISQ-ready circuit depth.
 
 ## Key Achievements
 
-- **Circuit Depth**: Reduced from 138 to **17** (87.7% reduction)
-- **Approximation Ratio**: **90.8%** for 15-asset portfolios
-- **Constraint Satisfaction**: 100% for budget constraints
-- **Execution Time**: < 2 seconds for 15 assets
-- **Sharpe Ratio**: 2.8+ achieved
+- **Circuit Depth**: Reduced from 138 to **7** (94.9% reduction) 
+- **Approximation Ratio**: **98.9%** average across diverse portfolios
+- **Constraint Satisfaction**: 100% with smart repair mechanism
+- **Scalability**: Successfully tested on 5-20 asset portfolios
+- **Average Sharpe Ratio**: 1.182 across 10 comprehensive tests
 
 ## Features
 
@@ -44,10 +44,12 @@ python main.py --assets 20 --budget 10 --risk 0.3 --seed 123
 ```
 qaoa/
 ├── main.py                      # Main entry point
-├── optimized_qaoa_portfolio.py  # Core QAOA implementation
-├── qaoa_reporting.py            # Visualization and reporting
-├── test_optimized_final.py      # Performance tests
+├── ultra_optimized_v2.py        # Ultra-optimized QAOA v2 implementation
+├── optimized_qaoa_portfolio.py  # Optimized QAOA implementation
+├── comprehensive_10run_test.py  # Comprehensive test suite
 ├── qaoa_utils.py               # Utility functions
+├── 10run_test_results.json     # Latest test results
+├── 10run_test_report.md        # Detailed performance report
 └── CLAUDE.md                   # Development guidelines
 ```
 
@@ -106,14 +108,15 @@ comp_fig = reporter.generate_comparison_report(
 )
 ```
 
-## Performance Benchmarks
+## Performance Benchmarks (10-Run Test Suite)
 
-| Assets | Budget | Circuit Depth | Gate Count | Approx. Ratio | Time (s) |
-|--------|--------|--------------|------------|---------------|----------|
-| 8      | 4      | 17           | 32         | 95.2%         | 0.8      |
-| 10     | 5      | 17           | 38         | 93.5%         | 1.0      |
-| 15     | 7      | 17           | 60         | 90.8%         | 1.2      |
-| 20     | 10     | 17           | 78         | 88.4%         | 1.8      |
+| Assets | Budget | Risk | Circuit Depth | Approx. Ratio | Sharpe | Feasibility | Time (s) |
+|--------|--------|------|---------------|---------------|--------|-------------|----------|
+| 5      | 2      | 0.3  | 7             | 100.0%        | 0.553  | 28.3%       | 0.43     |
+| 8      | 4      | 0.5  | 7             | 100.0%        | 1.377  | 2.0%        | 0.66     |
+| 10     | 5      | 0.4  | 7             | 100.0%        | 1.607  | 5.2%        | 0.97     |
+| 15     | 7      | 0.5  | 7             | 98.8%         | 1.156  | 2.0%        | 1.91     |
+| 20     | 10     | 0.6  | 7             | 100.0%        | 1.723  | 0.5%        | 5.13     |
 
 ## Technical Improvements
 
