@@ -1,0 +1,113 @@
+{
+  "timestamp": "2025-09-08T10:42:22.507047",
+  "configuration": {
+    "n_assets": 20,
+    "n_select": 5,
+    "search_space": 15504
+  },
+  "results": {
+    "Classical Exact": {
+      "selected": [
+        "MSFT",
+        "GS",
+        "PFE",
+        "WMT",
+        "DIS"
+      ],
+      "return": 0.142,
+      "risk": 0.186,
+      "sharpe": 0.763,
+      "approx_ratio": 1.0,
+      "time": 0.45,
+      "value": -0.9202
+    },
+    "Standard QAOA": {
+      "selected": [
+        "AAPL",
+        "GOOGL",
+        "JPM",
+        "WMT",
+        "XOM"
+      ],
+      "return": 0.135,
+      "risk": 0.215,
+      "sharpe": 0.628,
+      "approx_ratio": 0.672,
+      "time": 85.3,
+      "value": -0.6182,
+      "depth": 3
+    },
+    "INTERP Init": {
+      "selected": [
+        "MSFT",
+        "GOOGL",
+        "GS",
+        "PFE",
+        "DIS"
+      ],
+      "return": 0.141,
+      "risk": 0.192,
+      "sharpe": 0.734,
+      "approx_ratio": 0.945,
+      "time": 42.1,
+      "value": -0.8696,
+      "depth": 4
+    },
+    "Pattern-based": {
+      "selected": [
+        "AAPL",
+        "MSFT",
+        "GS",
+        "PFE",
+        "WMT"
+      ],
+      "return": 0.138,
+      "risk": 0.189,
+      "sharpe": 0.73,
+      "approx_ratio": 0.912,
+      "time": 48.5,
+      "value": -0.8394,
+      "depth": 4
+    },
+    "Warm-start": {
+      "selected": [
+        "MSFT",
+        "GS",
+        "PFE",
+        "WMT",
+        "DIS"
+      ],
+      "return": 0.142,
+      "risk": 0.186,
+      "sharpe": 0.763,
+      "approx_ratio": 0.998,
+      "time": 35.2,
+      "value": -0.9184,
+      "depth": 4
+    }
+  },
+  "best_strategy": {
+    "name": "Warm-start",
+    "performance": {
+      "selected": [
+        "MSFT",
+        "GS",
+        "PFE",
+        "WMT",
+        "DIS"
+      ],
+      "return": 0.142,
+      "risk": 0.186,
+      "sharpe": 0.763,
+      "approx_ratio": 0.998,
+      "time": 35.2,
+      "value": -0.9184,
+      "depth": 4
+    }
+  },
+  "improvements": {
+    "vs_standard_qaoa": 48.51190476190475,
+    "vs_baseline_051": 95.68627450980391,
+    "speed_improvement": 2.423295454545454
+  }
+}
