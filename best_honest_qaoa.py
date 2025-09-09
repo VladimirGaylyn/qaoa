@@ -94,12 +94,13 @@ class BestHonestQAOA:
             
             if self.use_xy_mixer and layer % 2 == 1:
                 # XY-mixer for better constraint preservation
+                # Full strength for proper Hamming weight preservation
                 for i in range(self.n_assets - 1):
-                    qc.rxx(beta * 0.5, qreg[i], qreg[i + 1])
-                    qc.ryy(beta * 0.5, qreg[i], qreg[i + 1])
-                # Close the ring with reduced strength
-                qc.rxx(beta * 0.25, qreg[-1], qreg[0])
-                qc.ryy(beta * 0.25, qreg[-1], qreg[0])
+                    qc.rxx(beta, qreg[i], qreg[i + 1])
+                    qc.ryy(beta, qreg[i], qreg[i + 1])
+                # Close the ring with full strength for consistency
+                qc.rxx(beta, qreg[-1], qreg[0])
+                qc.ryy(beta, qreg[-1], qreg[0])
             else:
                 # Standard X-mixer
                 for i in range(self.n_assets):
@@ -200,33 +201,14 @@ class BestHonestQAOA:
     
     def optimize_smart(self, circuit: QuantumCircuit, expected_returns: np.ndarray,
                        covariance: np.ndarray) -> np.ndarray:
-        """Smart optimization using multiple strategies"""
+        """Hybrid optimization strategy combining global and local search"""
         
-        print("\nOptimization Strategy:")
+        print("\nOptimization Strategy: Hybrid Approach")
         
-        # Strategy 1: Get good initial parameters
+        # Get good initial parameters
         initial_params = LegitimateEnhancements.warm_start_parameters(
             self.n_assets, self.budget, self.p
         )
-        
-        # Strategy 2: Layer-wise optimization for first few layers
-        if self.p > 4:
-            print("  Phase 1: Layer-wise optimization...")
-            params = ImprovedOptimizer.layerwise_optimization(
-                circuit,
-                lambda p: self.objective_function(p, circuit, expected_returns, covariance),
-                min(4, self.p),
-                max_evals=50
-            )
-            # Extend with good guesses for remaining layers
-            if len(params) < 2 * self.p:
-                remaining = 2 * self.p - len(params)
-                params = np.concatenate([params, initial_params[-remaining:]])
-        else:
-            params = initial_params
-        
-        # Strategy 3: Global optimization
-        print("  Phase 2: Global optimization...")
         
         # Use appropriate bounds for each parameter
         bounds = []
@@ -239,13 +221,32 @@ class BestHonestQAOA:
             beta_scale = 1.0 / (1 + i * 0.15)
             bounds.append((-np.pi/2 * beta_scale, np.pi/2 * beta_scale))
         
-        # Main optimization
+        # Phase 1: Global search with differential evolution (noise-resilient)
+        print("  Phase 1: Global search with differential evolution")
+        
+        # Use differential evolution for global exploration (robust to noise)
+        global_iterations = min(30, self.max_iterations // 2)
+        
+        de_result = differential_evolution(
+            lambda p: self.objective_function(p, circuit, expected_returns, covariance),
+            bounds,
+            x0=initial_params,
+            maxiter=global_iterations,
+            popsize=10,
+            seed=42,
+            disp=False
+        )
+        
+        # Phase 2: Local refinement with L-BFGS-B
+        print("  Phase 2: Local refinement with L-BFGS-B")
+        
+        # Use L-BFGS-B for fine-tuning (better for smooth landscapes)
         result = minimize(
             lambda p: self.objective_function(p, circuit, expected_returns, covariance),
-            params,
+            de_result.x,
             method='L-BFGS-B',
             bounds=bounds,
-            options={'maxiter': self.max_iterations, 'ftol': 1e-6}
+            options={'maxiter': self.max_iterations - global_iterations, 'ftol': 1e-6}
         )
         
         return result.x
