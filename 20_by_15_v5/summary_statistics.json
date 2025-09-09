@@ -1,0 +1,8 @@
+{
+  "n_experiments": 20,
+  "timestamp": "2025-09-09T14:24:01.200361",
+  "avg_feasibility_rate": 0.1997955322265625,
+  "avg_best_probability": 0.000164794921875,
+  "avg_feasible_in_top1000": 0.0,
+  "avg_feasible_prob_top1000": 0.0
+}
