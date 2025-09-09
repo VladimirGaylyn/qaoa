@@ -10,7 +10,11 @@
       "Bash(pip install:*)",
       "Bash(python:*)",
       "Bash(git pull:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(cmd /c dir:*)",
+      "Bash(git rm:*)",
+      "Bash(dir:*)",
+      "Bash(del:*)"
     ],
     "deny": [],
     "ask": []
