@@ -1,0 +1,81 @@
+{
+  "experiment_id": 16,
+  "timestamp": "2025-09-09T13:55:56.233917",
+  "scenario": "balanced",
+  "risk_factor": 0.5,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.25665283203125,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.000274658203125,
+  "best_objective": 0.17037220958733845,
+  "top_10_solutions": [
+    {
+      "state": "001000100101000",
+      "probability": 0.000274658203125,
+      "objective": 0.17037220958733845,
+      "count": 9
+    },
+    {
+      "state": "001000100100010",
+      "probability": 0.00018310546875,
+      "objective": 0.1691300286003672,
+      "count": 6
+    },
+    {
+      "state": "000000100101010",
+      "probability": 0.000152587890625,
+      "objective": 0.16799307030586003,
+      "count": 5
+    },
+    {
+      "state": "101000100100000",
+      "probability": 0.000274658203125,
+      "objective": 0.1672200775228693,
+      "count": 9
+    },
+    {
+      "state": "001010100100000",
+      "probability": 0.0001220703125,
+      "objective": 0.16663659733475966,
+      "count": 4
+    },
+    {
+      "state": "001000100100100",
+      "probability": 9.1552734375e-05,
+      "objective": 0.16599912013607204,
+      "count": 3
+    },
+    {
+      "state": "100000100101000",
+      "probability": 0.000152587890625,
+      "objective": 0.1652633965654545,
+      "count": 5
+    },
+    {
+      "state": "100000100100010",
+      "probability": 0.000396728515625,
+      "objective": 0.164563800576287,
+      "count": 13
+    },
+    {
+      "state": "000000100101100",
+      "probability": 0.000274658203125,
+      "objective": 0.1644496699650912,
+      "count": 9
+    },
+    {
+      "state": "000010100101000",
+      "probability": 6.103515625e-05,
+      "objective": 0.1644335615276953,
+      "count": 2
+    }
+  ],
+  "n_unique_states": 12504,
+  "n_feasible_states": 1360,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 27.42474126815796,
+  "classical_best": 0.17037220958733845
+}

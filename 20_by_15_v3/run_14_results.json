@@ -1,0 +1,81 @@
+{
+  "experiment_id": 14,
+  "timestamp": "2025-09-09T13:54:58.560213",
+  "scenario": "bear",
+  "risk_factor": 0.7,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.46600341796875,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.000396728515625,
+  "best_objective": 0.07197273653156958,
+  "top_10_solutions": [
+    {
+      "state": "000001001010001",
+      "probability": 0.000396728515625,
+      "objective": 0.07197273653156958,
+      "count": 13
+    },
+    {
+      "state": "100001001010000",
+      "probability": 0.00042724609375,
+      "objective": 0.06631058358003947,
+      "count": 14
+    },
+    {
+      "state": "100001001000001",
+      "probability": 0.000244140625,
+      "objective": 0.06615101262679766,
+      "count": 8
+    },
+    {
+      "state": "000001011000001",
+      "probability": 0.000335693359375,
+      "objective": 0.06564122654159818,
+      "count": 11
+    },
+    {
+      "state": "000001101000001",
+      "probability": 0.000152587890625,
+      "objective": 0.06362250396250753,
+      "count": 5
+    },
+    {
+      "state": "001001001000001",
+      "probability": 0.000396728515625,
+      "objective": 0.06284294868484849,
+      "count": 13
+    },
+    {
+      "state": "000001011010000",
+      "probability": 0.000274658203125,
+      "objective": 0.06089056074850819,
+      "count": 9
+    },
+    {
+      "state": "100001100000001",
+      "probability": 0.000274658203125,
+      "objective": 0.05816151011833171,
+      "count": 9
+    },
+    {
+      "state": "100001101000000",
+      "probability": 0.000213623046875,
+      "objective": 0.05799108593088546,
+      "count": 7
+    },
+    {
+      "state": "000001110000001",
+      "probability": 0.000457763671875,
+      "objective": 0.05730657501414077,
+      "count": 15
+    }
+  ],
+  "n_unique_states": 8917,
+  "n_feasible_states": 1365,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 27.6290762424469,
+  "classical_best": 0.07197273653156958
+}

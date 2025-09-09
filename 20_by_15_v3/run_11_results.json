@@ -1,0 +1,81 @@
+{
+  "experiment_id": 11,
+  "timestamp": "2025-09-09T13:53:37.574126",
+  "scenario": "volatile",
+  "risk_factor": 0.7,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.4176025390625,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.00018310546875,
+  "best_objective": 0.18481873691149175,
+  "top_10_solutions": [
+    {
+      "state": "001000011000010",
+      "probability": 0.00018310546875,
+      "objective": 0.18481873691149175,
+      "count": 6
+    },
+    {
+      "state": "001000001100010",
+      "probability": 0.000152587890625,
+      "objective": 0.17111989164746516,
+      "count": 5
+    },
+    {
+      "state": "001000011100000",
+      "probability": 0.000213623046875,
+      "objective": 0.1692007304457729,
+      "count": 7
+    },
+    {
+      "state": "001000010100010",
+      "probability": 9.1552734375e-05,
+      "objective": 0.1687480501198102,
+      "count": 3
+    },
+    {
+      "state": "001000010001010",
+      "probability": 0.000274658203125,
+      "objective": 0.16842426784240166,
+      "count": 9
+    },
+    {
+      "state": "001000001001010",
+      "probability": 0.000213623046875,
+      "objective": 0.16491022147214834,
+      "count": 7
+    },
+    {
+      "state": "000000011100010",
+      "probability": 0.0001220703125,
+      "objective": 0.15646246582560025,
+      "count": 4
+    },
+    {
+      "state": "101000001000010",
+      "probability": 0.000213623046875,
+      "objective": 0.15370220857988492,
+      "count": 7
+    },
+    {
+      "state": "001000101000010",
+      "probability": 0.000335693359375,
+      "objective": 0.15243993794496252,
+      "count": 11
+    },
+    {
+      "state": "001000000101010",
+      "probability": 0.000396728515625,
+      "objective": 0.1511492024396755,
+      "count": 13
+    }
+  ],
+  "n_unique_states": 7894,
+  "n_feasible_states": 1364,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 22.94414234161377,
+  "classical_best": 0.18481873691149175
+}

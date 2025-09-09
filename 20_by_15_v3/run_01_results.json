@@ -1,0 +1,81 @@
+{
+  "experiment_id": 1,
+  "timestamp": "2025-09-09T13:49:32.333598",
+  "scenario": "bull",
+  "risk_factor": 0.5,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.20574951171875,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.000152587890625,
+  "best_objective": 0.2088981868418444,
+  "top_10_solutions": [
+    {
+      "state": "100000111000000",
+      "probability": 0.000152587890625,
+      "objective": 0.2088981868418444,
+      "count": 5
+    },
+    {
+      "state": "100001011000000",
+      "probability": 0.00018310546875,
+      "objective": 0.19943323224519496,
+      "count": 6
+    },
+    {
+      "state": "110000011000000",
+      "probability": 0.000244140625,
+      "objective": 0.1980691229779137,
+      "count": 8
+    },
+    {
+      "state": "100010011000000",
+      "probability": 0.000274658203125,
+      "objective": 0.19653432281311328,
+      "count": 9
+    },
+    {
+      "state": "100000011000100",
+      "probability": 0.00030517578125,
+      "objective": 0.19590612405403607,
+      "count": 10
+    },
+    {
+      "state": "000001111000000",
+      "probability": 0.000152587890625,
+      "objective": 0.19356856977777206,
+      "count": 5
+    },
+    {
+      "state": "100001110000000",
+      "probability": 0.000152587890625,
+      "objective": 0.19232761491173989,
+      "count": 5
+    },
+    {
+      "state": "010000111000000",
+      "probability": 0.000152587890625,
+      "objective": 0.19229064701605067,
+      "count": 5
+    },
+    {
+      "state": "110000110000000",
+      "probability": 0.000213623046875,
+      "objective": 0.19169297188131756,
+      "count": 7
+    },
+    {
+      "state": "000010111000000",
+      "probability": 0.00018310546875,
+      "objective": 0.1902317970534018,
+      "count": 6
+    }
+  ],
+  "n_unique_states": 12189,
+  "n_feasible_states": 1356,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 21.130361318588257,
+  "classical_best": 0.2088981868418444
+}

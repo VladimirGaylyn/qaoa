@@ -1,0 +1,81 @@
+{
+  "experiment_id": 6,
+  "timestamp": "2025-09-09T13:51:37.011255",
+  "scenario": "bear",
+  "risk_factor": 0.3,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.12396240234375,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 9.1552734375e-05,
+  "best_objective": 0.08562741547306457,
+  "top_10_solutions": [
+    {
+      "state": "000100100100100",
+      "probability": 9.1552734375e-05,
+      "objective": 0.08562741547306457,
+      "count": 3
+    },
+    {
+      "state": "000100000100110",
+      "probability": 0.0001220703125,
+      "objective": 0.08513254077867854,
+      "count": 4
+    },
+    {
+      "state": "000000100100110",
+      "probability": 6.103515625e-05,
+      "objective": 0.0843251899312634,
+      "count": 2
+    },
+    {
+      "state": "000100000110100",
+      "probability": 6.103515625e-05,
+      "objective": 0.08412657661316911,
+      "count": 2
+    },
+    {
+      "state": "000000000111100",
+      "probability": 0.0001220703125,
+      "objective": 0.08344456506815318,
+      "count": 4
+    },
+    {
+      "state": "000000000110110",
+      "probability": 9.1552734375e-05,
+      "objective": 0.08282671894204763,
+      "count": 3
+    },
+    {
+      "state": "000000100110100",
+      "probability": 3.0517578125e-05,
+      "objective": 0.08252217525838167,
+      "count": 1
+    },
+    {
+      "state": "000100000010110",
+      "probability": 0.0001220703125,
+      "objective": 0.08050580789787075,
+      "count": 4
+    },
+    {
+      "state": "000100100000110",
+      "probability": 0.000152587890625,
+      "objective": 0.08026939714653414,
+      "count": 5
+    },
+    {
+      "state": "000100100100010",
+      "probability": 6.103515625e-05,
+      "objective": 0.07959418582053802,
+      "count": 2
+    }
+  ],
+  "n_unique_states": 11088,
+  "n_feasible_states": 1292,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 24.217853307724,
+  "classical_best": 0.08562741547306457
+}

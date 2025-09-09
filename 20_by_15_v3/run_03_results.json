@@ -1,0 +1,81 @@
+{
+  "experiment_id": 3,
+  "timestamp": "2025-09-09T13:50:18.819360",
+  "scenario": "volatile",
+  "risk_factor": 0.3,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.303466796875,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.00030517578125,
+  "best_objective": 0.20614290259887488,
+  "top_10_solutions": [
+    {
+      "state": "000001010100010",
+      "probability": 0.00030517578125,
+      "objective": 0.20614290259887488,
+      "count": 10
+    },
+    {
+      "state": "000001000100110",
+      "probability": 0.000274658203125,
+      "objective": 0.1936467750537741,
+      "count": 9
+    },
+    {
+      "state": "000001000110010",
+      "probability": 9.1552734375e-05,
+      "objective": 0.18921055783865942,
+      "count": 3
+    },
+    {
+      "state": "000001000101010",
+      "probability": 0.0003662109375,
+      "objective": 0.1821301365547182,
+      "count": 12
+    },
+    {
+      "state": "000011000100010",
+      "probability": 0.0003662109375,
+      "objective": 0.18145404578198573,
+      "count": 12
+    },
+    {
+      "state": "000001010000110",
+      "probability": 0.000274658203125,
+      "objective": 0.1770470189547661,
+      "count": 9
+    },
+    {
+      "state": "100001000100010",
+      "probability": 0.000213623046875,
+      "objective": 0.17518560696166985,
+      "count": 7
+    },
+    {
+      "state": "000001100100010",
+      "probability": 6.103515625e-05,
+      "objective": 0.1738806225999841,
+      "count": 2
+    },
+    {
+      "state": "010001000100010",
+      "probability": 0.000213623046875,
+      "objective": 0.17313373466314996,
+      "count": 7
+    },
+    {
+      "state": "000001000100011",
+      "probability": 0.000244140625,
+      "objective": 0.17294137292154246,
+      "count": 8
+    }
+  ],
+  "n_unique_states": 10080,
+  "n_feasible_states": 1365,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 23.65009331703186,
+  "classical_best": 0.20614290259887488
+}

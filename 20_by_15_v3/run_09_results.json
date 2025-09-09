@@ -1,0 +1,81 @@
+{
+  "experiment_id": 9,
+  "timestamp": "2025-09-09T13:52:49.750272",
+  "scenario": "bull",
+  "risk_factor": 0.3,
+  "n_assets": 15,
+  "budget": 4,
+  "feasibility_rate": 0.44268798828125,
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.000244140625,
+  "best_objective": 0.21773719726913504,
+  "top_10_solutions": [
+    {
+      "state": "000010101100000",
+      "probability": 0.000244140625,
+      "objective": 0.21773719726913504,
+      "count": 8
+    },
+    {
+      "state": "000010100100010",
+      "probability": 0.00042724609375,
+      "objective": 0.20721767177514158,
+      "count": 14
+    },
+    {
+      "state": "001010100100000",
+      "probability": 0.00042724609375,
+      "objective": 0.20549200025864775,
+      "count": 14
+    },
+    {
+      "state": "000010001100010",
+      "probability": 0.000213623046875,
+      "objective": 0.20542323362348366,
+      "count": 7
+    },
+    {
+      "state": "000010101000010",
+      "probability": 0.000274658203125,
+      "objective": 0.20535639692407381,
+      "count": 9
+    },
+    {
+      "state": "000010100110000",
+      "probability": 0.00030517578125,
+      "objective": 0.2041837316745934,
+      "count": 10
+    },
+    {
+      "state": "001010001100000",
+      "probability": 0.000152587890625,
+      "objective": 0.20401977590620804,
+      "count": 5
+    },
+    {
+      "state": "000010001110000",
+      "probability": 0.000335693359375,
+      "objective": 0.20306394673674233,
+      "count": 11
+    },
+    {
+      "state": "001010101000000",
+      "probability": 0.00042724609375,
+      "objective": 0.2030114991119052,
+      "count": 14
+    },
+    {
+      "state": "000010101010000",
+      "probability": 0.000396728515625,
+      "objective": 0.20293442105898624,
+      "count": 13
+    }
+  ],
+  "n_unique_states": 9508,
+  "n_feasible_states": 1365,
+  "circuit_depth": 118,
+  "circuit_executions": 76,
+  "total_shots": 647168,
+  "computation_time": 24.375771045684814,
+  "classical_best": 0.21773719726913504
+}
