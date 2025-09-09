@@ -1,0 +1,379 @@
+{
+  "metadata": {
+    "timestamp": "2025-09-08T20:28:36.996489",
+    "test_type": "Advanced Warm Start Comparison",
+    "total_tests": 10
+  },
+  "results": [
+    {
+      "test_id": 1,
+      "config": {
+        "n_assets": 6,
+        "budget": 3,
+        "risk_factor": 0.5,
+        "correlation": "low"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 2.959009614967912,
+        "objective_value": 0.3012103451276756,
+        "feasibility_rate": 0.0753173828125,
+        "initial_feasibility": 0.0753173828125,
+        "execution_time": 0.40099501609802246,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 2.959009614967912,
+        "objective_value": 0.3012103451276756,
+        "feasibility_rate": 0.1182861328125,
+        "initial_feasibility": 0.1182861328125,
+        "execution_time": 0.5398399829864502,
+        "converged": true,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.3012103451276756
+      },
+      "improvements": {
+        "convergence_speedup_pct": 0.0,
+        "approx_ratio_diff": 0.0,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": 0.04296875
+      }
+    },
+    {
+      "test_id": 2,
+      "config": {
+        "n_assets": 8,
+        "budget": 4,
+        "risk_factor": 0.3,
+        "correlation": "high"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 0.7426141131033932,
+        "objective_value": 0.10059352442109273,
+        "feasibility_rate": 0.074462890625,
+        "initial_feasibility": 0.070068359375,
+        "execution_time": 0.711392879486084,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 12,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 0.7426141131033932,
+        "objective_value": 0.10059352442109273,
+        "feasibility_rate": 0.1046142578125,
+        "initial_feasibility": 0.08984375,
+        "execution_time": 0.7645835876464844,
+        "converged": true,
+        "warm_start_strategy": "momentum",
+        "warm_start_quality": 0.10059352442109273
+      },
+      "improvements": {
+        "convergence_speedup_pct": -20.0,
+        "approx_ratio_diff": 0.0,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": 0.019775390625
+      }
+    },
+    {
+      "test_id": 3,
+      "config": {
+        "n_assets": 10,
+        "budget": 5,
+        "risk_factor": 0.7,
+        "correlation": "mixed"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 1.1843916446891913,
+        "objective_value": 0.17494113051247143,
+        "feasibility_rate": 0.049560546875,
+        "initial_feasibility": 0.039794921875,
+        "execution_time": 0.8279054164886475,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 1.1843916446891913,
+        "objective_value": 0.17494113051247143,
+        "feasibility_rate": 0.0855712890625,
+        "initial_feasibility": 0.044677734375,
+        "execution_time": 0.8317811489105225,
+        "converged": true,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.17494113051247143
+      },
+      "improvements": {
+        "convergence_speedup_pct": 0.0,
+        "approx_ratio_diff": 0.0,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": 0.0048828125
+      }
+    },
+    {
+      "test_id": 4,
+      "config": {
+        "n_assets": 12,
+        "budget": 6,
+        "risk_factor": 0.5,
+        "correlation": "clustered"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 0.9537228099084634,
+        "sharpe_ratio": 3.9374426923638493,
+        "objective_value": 0.33788670732396553,
+        "feasibility_rate": 0.0426025390625,
+        "initial_feasibility": 0.021728515625,
+        "execution_time": 1.0705337524414062,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 18,
+        "approximation_ratio": 0.9537228099084634,
+        "sharpe_ratio": 3.9374426923638493,
+        "objective_value": 0.33788670732396553,
+        "feasibility_rate": 0.0643310546875,
+        "initial_feasibility": 0.0120849609375,
+        "execution_time": 1.196225643157959,
+        "converged": true,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.35428187709633924
+      },
+      "improvements": {
+        "convergence_speedup_pct": -80.0,
+        "approx_ratio_diff": 0.0,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": -0.0096435546875
+      }
+    },
+    {
+      "test_id": 5,
+      "config": {
+        "n_assets": 15,
+        "budget": 7,
+        "risk_factor": 0.4,
+        "correlation": "low"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 0.9518599834995247,
+        "sharpe_ratio": 1.3786394171642946,
+        "objective_value": 0.10362396623260392,
+        "feasibility_rate": 0.005859375,
+        "initial_feasibility": 0.0,
+        "execution_time": 1.7703137397766113,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 23,
+        "approximation_ratio": 0.947923612575662,
+        "sharpe_ratio": 1.2955405900427603,
+        "objective_value": 0.10319543433215182,
+        "feasibility_rate": 0.0281982421875,
+        "initial_feasibility": 0.0,
+        "execution_time": 1.729369878768921,
+        "converged": true,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.10886471542970969
+      },
+      "improvements": {
+        "convergence_speedup_pct": -130.0,
+        "approx_ratio_diff": -0.003936370923862675,
+        "sharpe_diff": -0.08309882712153427,
+        "feasibility_diff": 0.0
+      }
+    },
+    {
+      "test_id": 6,
+      "config": {
+        "n_assets": 8,
+        "budget": 3,
+        "risk_factor": 0.6,
+        "correlation": "negative"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 1.3190459015759828,
+        "objective_value": 0.2107055122284781,
+        "feasibility_rate": 0.1116943359375,
+        "initial_feasibility": 0.1104736328125,
+        "execution_time": 0.6529567241668701,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 1.3190459015759828,
+        "objective_value": 0.2107055122284781,
+        "feasibility_rate": 0.223388671875,
+        "initial_feasibility": 0.218017578125,
+        "execution_time": 0.7255747318267822,
+        "converged": true,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.2107055122284781
+      },
+      "improvements": {
+        "convergence_speedup_pct": 0.0,
+        "approx_ratio_diff": 0.0,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": 0.1075439453125
+      }
+    },
+    {
+      "test_id": 7,
+      "config": {
+        "n_assets": 10,
+        "budget": 6,
+        "risk_factor": 0.5,
+        "correlation": "high"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 1.6821576200284398,
+        "objective_value": 0.313781810696701,
+        "feasibility_rate": 0.0194091796875,
+        "initial_feasibility": 0.008056640625,
+        "execution_time": 0.8558025360107422,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 12,
+        "approximation_ratio": 1.0,
+        "sharpe_ratio": 1.6821576200284398,
+        "objective_value": 0.313781810696701,
+        "feasibility_rate": 0.035400390625,
+        "initial_feasibility": 0.009033203125,
+        "execution_time": 0.8131194114685059,
+        "converged": true,
+        "warm_start_strategy": "sharpe",
+        "warm_start_quality": 0.313781810696701
+      },
+      "improvements": {
+        "convergence_speedup_pct": -20.0,
+        "approx_ratio_diff": 0.0,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": 0.0009765625
+      }
+    },
+    {
+      "test_id": 8,
+      "config": {
+        "n_assets": 12,
+        "budget": 5,
+        "risk_factor": 0.3,
+        "correlation": "mixed"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 0.9361433531704391,
+        "sharpe_ratio": 1.778440191893532,
+        "objective_value": 0.10047714930683191,
+        "feasibility_rate": 0.09375,
+        "initial_feasibility": 0.05224609375,
+        "execution_time": 1.1976361274719238,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 30,
+        "approximation_ratio": 0.9428345086821982,
+        "sharpe_ratio": 1.080458710083211,
+        "objective_value": 0.10119531734072687,
+        "feasibility_rate": 0.0784912109375,
+        "initial_feasibility": 0.010986328125,
+        "execution_time": 1.239880084991455,
+        "converged": false,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.10591497226534542
+      },
+      "improvements": {
+        "convergence_speedup_pct": -200.0,
+        "approx_ratio_diff": 0.006691155511759139,
+        "sharpe_diff": -0.6979814818103209,
+        "feasibility_diff": -0.041259765625
+      }
+    },
+    {
+      "test_id": 9,
+      "config": {
+        "n_assets": 15,
+        "budget": 8,
+        "risk_factor": 0.5,
+        "correlation": "low"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 0.9542627652290706,
+        "sharpe_ratio": 2.3721093620161544,
+        "objective_value": 0.19564042651295366,
+        "feasibility_rate": 0.020751953125,
+        "initial_feasibility": 0.0,
+        "execution_time": 1.6854588985443115,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 30,
+        "approximation_ratio": 0.9322625865248667,
+        "sharpe_ratio": 1.908161213205633,
+        "objective_value": 0.19113000810213107,
+        "feasibility_rate": 0.028076171875,
+        "initial_feasibility": 0.0,
+        "execution_time": 1.8288593292236328,
+        "converged": false,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.2050173533345296
+      },
+      "improvements": {
+        "convergence_speedup_pct": -200.0,
+        "approx_ratio_diff": -0.0220001787042039,
+        "sharpe_diff": -0.4639481488105215,
+        "feasibility_diff": 0.0
+      }
+    },
+    {
+      "test_id": 10,
+      "config": {
+        "n_assets": 20,
+        "budget": 10,
+        "risk_factor": 0.4,
+        "correlation": "clustered"
+      },
+      "v2": {
+        "iterations": 10,
+        "approximation_ratio": 0.9209108538563067,
+        "sharpe_ratio": 3.538491969039199,
+        "objective_value": 0.230352858837724,
+        "feasibility_rate": 0.0111083984375,
+        "initial_feasibility": 0.0,
+        "execution_time": 6.336350202560425,
+        "converged": true
+      },
+      "v3": {
+        "iterations": 30,
+        "approximation_ratio": 0.9146496407495787,
+        "sharpe_ratio": 3.538491969039199,
+        "objective_value": 0.230352858837724,
+        "feasibility_rate": 0.0186767578125,
+        "initial_feasibility": 0.0,
+        "execution_time": 6.808501482009888,
+        "converged": false,
+        "warm_start_strategy": "max_diversification",
+        "warm_start_quality": 0.25301047402396576
+      },
+      "improvements": {
+        "convergence_speedup_pct": -200.0,
+        "approx_ratio_diff": -0.006261213106728003,
+        "sharpe_diff": 0.0,
+        "feasibility_diff": 0.0
+      }
+    }
+  ]
+}
