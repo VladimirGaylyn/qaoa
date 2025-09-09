@@ -1,0 +1,21 @@
+{
+  "n_experiments": 8,
+  "achieving_target": 8,
+  "target_achievement_rate": 1.0,
+  "avg_best_probability": 0.16723453277788408,
+  "std_best_probability": 0.03752481468792324,
+  "min_best_probability": 0.12707439637210444,
+  "max_best_probability": 0.22953287580252382,
+  "avg_feasibility_rate": 0.668414457379904,
+  "avg_approximation_ratio": 0.9780396788863231,
+  "all_best_probabilities": [
+    0.12707439637210444,
+    0.12746914086192482,
+    0.22953287580252382,
+    0.2164599774520857,
+    0.14959599846094654,
+    0.1421871142927672,
+    0.15320054376736217,
+    0.19235621521335805
+  ]
+}
