@@ -1,0 +1,35 @@
+{
+  "run_number": 6,
+  "scenario": {
+    "trend": "bear",
+    "volatility": "high",
+    "correlation": "negative"
+  },
+  "approximation_ratio": 0,
+  "best_solution_probability": 0.0,
+  "feasibility_rate": 0.1785888671875,
+  "circuit_depth": 7,
+  "convergence_iterations": 30,
+  "objective_value": -0.02820543207908847,
+  "selected_assets": [
+    "FIN1",
+    "FIN4",
+    "HEALTH1",
+    "ENERGY1",
+    "ENERGY2"
+  ],
+  "top_5_solutions": [
+    "00000000000000010000",
+    "00000000000000001000",
+    "00000000000000000000",
+    "00000000000000011000",
+    "00000000000000010100"
+  ],
+  "top_5_probabilities": [
+    0.003662109375,
+    0.002685546875,
+    0.002685546875,
+    0.002197265625,
+    0.001953125
+  ]
+}

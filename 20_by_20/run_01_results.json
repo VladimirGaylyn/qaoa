@@ -1,0 +1,35 @@
+{
+  "run_number": 1,
+  "scenario": {
+    "trend": "bear",
+    "volatility": "high",
+    "correlation": "negative"
+  },
+  "approximation_ratio": 1.0,
+  "best_solution_probability": 0.0001220703125,
+  "feasibility_rate": 0.173095703125,
+  "circuit_depth": 7,
+  "convergence_iterations": 19,
+  "objective_value": 0.04339110741536463,
+  "selected_assets": [
+    "TECH1",
+    "ENERGY4",
+    "CONS1",
+    "CONS3",
+    "CONS4"
+  ],
+  "top_5_solutions": [
+    "00000000000000000000",
+    "00000000000000010000",
+    "00000000000000001000",
+    "00000000000000001100",
+    "00000000000000011000"
+  ],
+  "top_5_probabilities": [
+    0.0118408203125,
+    0.0048828125,
+    0.0045166015625,
+    0.00439453125,
+    0.004150390625
+  ]
+}

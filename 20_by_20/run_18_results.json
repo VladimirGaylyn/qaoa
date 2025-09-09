@@ -1,0 +1,35 @@
+{
+  "run_number": 18,
+  "scenario": {
+    "trend": "bull",
+    "volatility": "high",
+    "correlation": "clustered"
+  },
+  "approximation_ratio": 0.9838963296117494,
+  "best_solution_probability": 0.0,
+  "feasibility_rate": 0.1689453125,
+  "circuit_depth": 7,
+  "convergence_iterations": 47,
+  "objective_value": 0.21464837610314344,
+  "selected_assets": [
+    "TECH1",
+    "TECH3",
+    "TECH4",
+    "ENERGY3",
+    "CONS4"
+  ],
+  "top_5_solutions": [
+    "00000000000000000000",
+    "10000000000000000000",
+    "00000100000000000000",
+    "00000000000000011000",
+    "10000000000000011000"
+  ],
+  "top_5_probabilities": [
+    0.0140380859375,
+    0.0098876953125,
+    0.006591796875,
+    0.006103515625,
+    0.005859375
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "run_number": 14,
+  "scenario": {
+    "trend": "bear",
+    "volatility": "low",
+    "correlation": "uncorrelated"
+  },
+  "approximation_ratio": 0.5022478859065309,
+  "best_solution_probability": 0.0,
+  "feasibility_rate": 0.169921875,
+  "circuit_depth": 7,
+  "convergence_iterations": 30,
+  "objective_value": 0.018904251466245615,
+  "selected_assets": [
+    "TECH2",
+    "TECH4",
+    "FIN2",
+    "HEALTH2",
+    "HEALTH3"
+  ],
+  "top_5_solutions": [
+    "00000000000000000000",
+    "00000000000001000000",
+    "00000001000000000000",
+    "00000010000000000000",
+    "00000000000000100000"
+  ],
+  "top_5_probabilities": [
+    0.015380859375,
+    0.0040283203125,
+    0.003662109375,
+    0.003662109375,
+    0.0035400390625
+  ]
+}

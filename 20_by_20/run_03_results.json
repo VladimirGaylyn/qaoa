@@ -1,0 +1,35 @@
+{
+  "run_number": 3,
+  "scenario": {
+    "trend": "bull",
+    "volatility": "high",
+    "correlation": "clustered"
+  },
+  "approximation_ratio": 0.9854706996595073,
+  "best_solution_probability": 0.0,
+  "feasibility_rate": 0.163330078125,
+  "circuit_depth": 7,
+  "convergence_iterations": 30,
+  "objective_value": 0.20693526434570886,
+  "selected_assets": [
+    "TECH2",
+    "FIN1",
+    "HEALTH1",
+    "ENERGY4",
+    "CONS1"
+  ],
+  "top_5_solutions": [
+    "00000000000000000000",
+    "00000000000001110000",
+    "00011000000000000000",
+    "00000000000000000010",
+    "00000000000100000000"
+  ],
+  "top_5_probabilities": [
+    0.0081787109375,
+    0.0047607421875,
+    0.004638671875,
+    0.003662109375,
+    0.0029296875
+  ]
+}
